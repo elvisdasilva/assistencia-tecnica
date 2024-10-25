@@ -8,6 +8,3 @@ class Identity(AbstractUser):
     class Meta:
         verbose_name = "Identity"
         verbose_name_plural = "Identities"
-
-    def __str__(self):
-        return self.company
