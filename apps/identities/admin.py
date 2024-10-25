@@ -7,6 +7,7 @@ from core.settings import EMAIL_HOST_USER
 from django.template.loader import render_to_string
 
 
+@admin.register(Identity)
 class IdentityAdmin(admin.ModelAdmin):
     list_display = ("username", "email", "company")
 
@@ -32,6 +33,3 @@ class IdentityAdmin(admin.ModelAdmin):
             )
 
         super().save_model(request, obj, form, change)
-
-
-admin.site.register(Identity, IdentityAdmin)
