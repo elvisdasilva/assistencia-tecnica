@@ -29,7 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'identities.Identity'
 EMAIL_BACKEND = config('EMAIL_BACKEND')
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT')
@@ -49,7 +48,6 @@ INSTALLED_APPS = [
     'apps.brands',
     'apps.categories',
     'apps.companies',
-    'apps.identities',
     'apps.models',
     'apps.payments',
     'apps.situations',
