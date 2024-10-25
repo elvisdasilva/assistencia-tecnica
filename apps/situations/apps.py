@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class SituationsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'situations'
+    name = 'apps.situations'
