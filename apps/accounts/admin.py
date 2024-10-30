@@ -4,6 +4,7 @@ from apps.accounts.models import User
 
 
 class UserAdmin(admin.ModelAdmin):
+    list_display = ("username", "email", "is_active", "is_staff", "is_superuser", "company")
     filter_horizontal = ("groups", "user_permissions")
 
     def save_model(self, request, obj, form, change):
