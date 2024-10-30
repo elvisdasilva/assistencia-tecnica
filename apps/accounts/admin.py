@@ -12,5 +12,8 @@ class UserAdmin(admin.ModelAdmin):
             obj.save()
             SendResetPasswordEmailView().send_email(obj)
 
+        else:
+            obj.save()
+
 
 admin.site.register(User, UserAdmin)
