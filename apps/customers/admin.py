@@ -1,8 +1,8 @@
 from django.contrib import admin
-from apps.customers.models import Customer
+from apps.customers.models import Customers
 
 
-@admin.register(Customer)
+@admin.register(Customers)
 class CustomerAdmin(admin.ModelAdmin):
     list_display = [
         "first_name",
