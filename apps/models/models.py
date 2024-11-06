@@ -12,6 +12,7 @@ class Model(models.Model):
     class Meta:
         verbose_name = "Model"
         verbose_name_plural = "Models"
+        ordering = ['name']
 
     def __str__(self):
         return self.name

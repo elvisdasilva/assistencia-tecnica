@@ -60,6 +60,7 @@ class Customers(models.Model):
     class Meta:
         verbose_name = "Customer"
         verbose_name_plural = "Customers"
+        ordering = ["first_name"]
 
     def __str__(self):
         return self.first_name

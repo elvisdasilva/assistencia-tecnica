@@ -12,6 +12,7 @@ class Situation(models.Model):
     class Meta:
         verbose_name = "Situation"
         verbose_name_plural = "Situations"
+        ordering = ['name']
 
     def __str__(self):
         return self.name
