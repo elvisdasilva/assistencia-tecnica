@@ -20,3 +20,9 @@ class CompanyAdmin(admin.ModelAdmin):
         "created_at",
         "updated_at",
     )
+
+    def get_queryset(self, request):
+        if request.user.is_superuser:
+            return super().get_queryset(request)
+
+        return super().get_queryset(request).filter(user=request.user)
