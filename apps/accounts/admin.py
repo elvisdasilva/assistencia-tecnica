@@ -1,7 +1,7 @@
-from django import forms
 from django.contrib import admin
-from apps.accounts.views import SendResetPasswordEmailView
+
 from apps.accounts.models import User
+from apps.accounts.views import SendResetPasswordEmailView
 
 
 class UserAdmin(admin.ModelAdmin):
